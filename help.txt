@@ -1,0 +1,9 @@
+                                      ##########################
+                                      ## AVAILABLE PARAMETERS ##
+###############################################################################################################
+##                                                                                                           ##
+##  -t true/false                # Used to turn on and off the option to close the terminal.                 ##
+##  -d DISTRO_process_name       # Used to change the name of your DISTRO process name in the Task Manager.  ##
+##  -i IDE_process_name          # Used to change the name of your IDE process name in the Task Manager.     ##
+##                                                                                                           ##
+###############################################################################################################
