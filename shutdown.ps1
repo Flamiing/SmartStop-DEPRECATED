@@ -16,7 +16,7 @@ Foreach ($i in $(Get-Content settings.conf))
 $IDE = Get-Process $EDITOR -ErrorAction SilentlyContinue
 $windowsTerminal = Get-Process windowsterminal -ErrorAction SilentlyContinue
 $openConsole = Get-Process openconsole -ErrorAction SilentlyContinue
-$linuxsys = Get-Process $DISTRO -ErrorAction SilentlyContinue
+$linuxdistro = Get-Process $DISTRO -ErrorAction SilentlyContinue
 
 # OPTIONAL:
 # Checks if Windows Terminal is open and closes it
@@ -31,6 +31,7 @@ Remove-Variable windowsTerminal
 Remove-Variable openConsole
 Remove-Variable WINTERMINAL
 
+
 # Checks if IDE is open and closes it
 if ($IDE)
 {
@@ -42,16 +43,16 @@ Remove-Variable IDE
 Remove-Variable EDITOR
 
 
-# DO NOT CHANGE!
-# Checks if the linux distro app is open and closes it
-if ($linuxsys)
+# Checks if the Linux Distro App is open and closes it
+if ($linuxdistro)
 {
-    $linuxsys | Stop-Process -Force
+    $linuxdistro | Stop-Process -Force
 }
 
 # Removes variables after use
-Remove-Variable linuxsys
+Remove-Variable linuxdistro
 Remove-Variable DISTRO
+
 
 # After all the apps using WSL are closed it turns it off and exits
 wsl --shutdown
