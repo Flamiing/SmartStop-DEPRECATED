@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Adds a Symbolic Link to the /usr/bin directory
+sudo ln -s /usr/local/Smart\ Stop/smart-stop /usr/bin/smart-stop

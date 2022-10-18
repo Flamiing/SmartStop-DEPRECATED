@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Pre-install script for Smart Stop 1.0 and up
+# Removes old versions of Smart Stop to make a clean install
+
+
+echo "Looking for old versions of Smart Stop..."
+
+# Removes old Symbolic Link
+sudo rm -rf /usr/bin/smart-stop
+echo "Removed Smart Stop old Symbolic Link from /usr/bin if exists..."
+
+# Removes old program's main folder
+sudo rm -rf /usr/local/Smart\ Stop
+echo "Removed Smart Stop old main folder from /usr/local if exists..."
+
+# Removes old config folder
+sudo rm -rf /etc/Smart\ Stop
+echo "Removed Smart Stop old config folder from /etc/Smart Stop if exists..."
