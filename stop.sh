@@ -46,13 +46,13 @@ elif [[ $1 == '-i' ]] || [[ $1 == '-I' ]]; then
         echo "Please enter an IDE process name after '-d' parameter."
     fi
 # Checks if the user is using the parameter to get help
-elif [[ $1 == '-?' ]] || [[ $1 == "-help" ]]; then
+elif [[ $1 == '-?' ]] || [[ $1 == "--help" ]]; then
     echo | echo; cat help.txt; echo; echo
 # Checks if user's input is a supported paramenter
 elif [ ! -z $1 ]; then
     echo "ERROR: Parameter not accepted"
     echo "To change the settings try using the available parameters"
-    echo "that you can check with 'stop -?' or 'stop -help'."
+    echo "that you can check with 'stop -?' or 'stop --help'."
 # If the code has no parameter runs the Powershell Script to close WSL
 else
     # Promt the user with a message and runs shutdown.ps1 script
