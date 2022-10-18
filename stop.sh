@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # |SMART STOP v0.2|
-# Developed by: https://github.com/ZumoDeZumos
+# Developed by: https://github.com/ZumoOfZumos
 # This program lets the user close WSL with just a simple 'stop' in the Linux Terminal
 # If needed or wanted there are several options that can be modified with parameters so that the programs suits your needs
-# For more info please visit: https://github.com/ZumoDeZumos/SmartStop
+# For more info please visit: https://github.com/ZumoOfZumos/SmartStop
 
 # OPTIONS:
 # Checks if user wants to turn on/off the Windows Terminal option

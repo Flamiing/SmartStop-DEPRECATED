@@ -6,4 +6,7 @@
 ##  -d DISTRO_process_name       # Used to change the name of your DISTRO process name in the Task Manager.  ##
 ##  -i IDE_process_name          # Used to change the name of your IDE process name in the Task Manager.     ##
 ##                                                                                                           ##
+##                                            For more info visit:                                           ##
+##                                  https://github.com/ZumoOfZumos/SmartStop                                 ##
+##                                                                                                           ##
 ###############################################################################################################

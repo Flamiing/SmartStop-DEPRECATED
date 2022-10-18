@@ -1,10 +1,10 @@
-# Developed by: https://github.com/ZumoDeZumos
+# Developed by: https://github.com/ZumoOfZumos
 # Basic Poweshell Script to turn off WSL and all the programs using it
 
 # IMPORTANT:
 # This script will close your desired IDE and Linux Distribution
 # It will close Windows Terminal if set to 'true' in the config file
-# For more info please visit: https://github.com/ZumoDeZumos/SmartStop
+# For more info please visit: https://github.com/ZumoOfZumos/SmartStop
 
 # Gets the settings from the conig file
 Foreach ($i in $(Get-Content settings.conf))
