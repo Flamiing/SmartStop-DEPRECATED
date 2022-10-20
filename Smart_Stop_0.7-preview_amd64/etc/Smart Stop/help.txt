@@ -5,7 +5,7 @@
 ##  -t true/false                # Used to turn on/off the option to close the terminal                      ##
 ##  -d DISTRO_process_name       # Used to change the name of your DISTRO process name in the Task Manager   ##
 ##  -i IDE_process_name          # Used to change the name of your IDE process name in the Task Manager      ##
-##  --version                    # Used to get the Version and License of the program                        ##
+##  --version                    # Used to get the Version of the program                                    ##
 ##  --uninstall                  # Used to safely uninstall the program                                      ##
 ##                                                                                                           ##
 ##                                            For more info visit:                                           ##

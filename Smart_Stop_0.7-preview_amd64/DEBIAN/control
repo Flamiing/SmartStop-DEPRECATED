@@ -1,6 +1,6 @@
 Package: smart-stop
 Version: 1.0
-Architecture: all
+Architecture: amd64
 Maintainer: https://github.com/ZumoOfZumos
 Description: Program to close WSL with a command in the terminal
  

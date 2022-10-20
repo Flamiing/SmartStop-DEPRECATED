@@ -1,17 +1,17 @@
 #!/bin/bash
 
-# |SMART STOP v0.3|
+# |SMART STOP v0.7|
 # Developed by: https://github.com/ZumoOfZumos
-# This program lets the user close WSL with just a simple 'stop' in the Linux Terminal
+# This program lets the user close WSL by just typing 'smart-stop' in the Linux Terminal
 # If needed or wanted there are several options that can be modified with parameters so that the programs suits your needs
 # For more info please visit: https://github.com/ZumoOfZumos/SmartStop
 
 
 # OPTIONS:
 # Checks if user wants to turn on/off the Windows Terminal option
-if [[ $1 == '-t' ]] || [[ $1 == '-T' ]]; then 
+if [[ $1 == '-t' ]] || [[ $1 == '-T' ]]; then
     # Checks if is true
-    if [[ $2 == "true" ]]; then 
+    if [[ $2 == "true" ]]; then
         # Modifyes the config file with the user preference
         sudo sed -i "s/WINTERMINAL=.*/WINTERMINAL=$2/g" /etc/Smart\ Stop/smart-stop.conf
         echo "The terminal will be closed when Smart Stop is used."
@@ -25,9 +25,9 @@ if [[ $1 == '-t' ]] || [[ $1 == '-T' ]]; then
         echo "Please enter 'true' or 'false' after the '-t' parameter."
     fi
 # Checks if user wants to change the DISTRO
-elif [[ $1 == '-d' ]] || [[ $1 == '-D' ]]; then 
-    # Checks if user inputted a preference  
-    if [ ! -z $2 ]; then 
+elif [[ $1 == '-d' ]] || [[ $1 == '-D' ]]; then
+    # Checks if user inputted a preference
+    if [ ! -z $2 ]; then
         # Modifyes the config file with the user preference
         sudo sed -i "s/DISTRO=.*/DISTRO=$2/g" /etc/Smart\ Stop/smart-stop.conf
         echo "Distro has been changed to $2"
@@ -36,9 +36,9 @@ elif [[ $1 == '-d' ]] || [[ $1 == '-D' ]]; then
         echo "Please enter a distro process name after '-d' parameter."
     fi
 # Checks if user wants to change the IDE
-elif [[ $1 == '-i' ]] || [[ $1 == '-I' ]]; then 
+elif [[ $1 == '-i' ]] || [[ $1 == '-I' ]]; then
     # Checks if user inputted a preference
-    if [ ! -z $2 ]; then 
+    if [ ! -z $2 ]; then
         # Modifyes the config file with the user preference
         sudo sed -i "s/EDITOR=.*/EDITOR=$2/g" /etc/Smart\ Stop/smart-stop.conf
         echo "IDE has been changed to $2 "
@@ -51,8 +51,13 @@ elif [[ $1 == '-?' ]] || [[ $1 == "--help" ]]; then
     echo | echo; cat /etc/Smart\ Stop/help.txt; echo; echo
 # Checks version of the program
 elif [[ $1 == "--version" ]]; then
-    echo | echo "Smart Stop V1.0"
-    echo | echo; cat /usr/local/Smart\ Stop/LICENSE.lic; echo; echo
+    echo 
+    echo "Smart Stop V1.0"
+    echo 
+    echo "MIT License"
+    echo 
+    echo "Copyright (c) 2022 ZumoOfZumos"
+    echo
 # Uninstalls the program
 elif [[ $1 == "--uninstall" ]]; then
     echo "Uninstalling Smart Stop..."
@@ -70,5 +75,6 @@ else
     sleep 0.4
 
     # Runs Powershell Script to close WSL
-    powershell.exe start shutdown.exe -WindowStyle hidden; exit
+    cd /usr/local/Smart\ Stop/
+    powershell.exe -f shutdown.ps1; exit
 fi

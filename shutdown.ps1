@@ -1,16 +1,18 @@
 # Developed by: https://github.com/ZumoOfZumos
-# Basic Poweshell Script to turn off WSL and all the programs using it
+# Poweshell Script to turn off WSL and all the programs using it
 
 # IMPORTANT:
 # This script will close your desired IDE and Linux Distribution
 # It will close Windows Terminal if set to 'true' in the config file
 # For more info please visit: https://github.com/ZumoOfZumos/SmartStop
 
+
 # Gets the settings from the conig file
-Foreach ($i in $(Get-Content Microsoft.PowerShell.Core\FileSystem::\\wsl$\Ubuntu-20.04\etc\"Smart Stop"\smart-stop.conf))
+Foreach ($i in $(Get-Content ../../../etc/"Smart Stop"/smart-stop.conf))
 {
     Set-Variable -Name $i.split("=")[0] -Value $i.split("=",2)[1]
 }
+
 
 # Checks for open processes and saves it to a variable
 $IDE = Get-Process $EDITOR -ErrorAction SilentlyContinue
