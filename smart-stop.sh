@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# |SMART STOP v0.7|
+# |SMART STOP v0.7.1|
 # Developed by: https://github.com/ZumoOfZumos
 # This program lets the user close WSL by just typing 'smart-stop' in the Linux Terminal
 # If needed or wanted there are several options that can be modified with parameters so that the programs suits your needs
@@ -13,12 +13,12 @@ if [[ $1 == '-t' ]] || [[ $1 == '-T' ]]; then
     # Checks if is true
     if [[ $2 == "true" ]]; then
         # Modifyes the config file with the user preference
-        sudo sed -i "s/WINTERMINAL=.*/WINTERMINAL=$2/g" /etc/Smart\ Stop/smart-stop.conf
+        sudo sed -i "s/WINTERMINAL=.*/WINTERMINAL=$2/g" /etc/Smart\ Stop/settings.conf
         echo "The terminal will be closed when Smart Stop is used."
     # Checks if is false
     elif [[ $2 == "false" ]]; then
         # Modifyes the config file with the user preference
-        sudo sed -i "s/WINTERMINAL=.*/WINTERMINAL=$2/g" /etc/Smart\ Stop/smart-stop.conf
+        sudo sed -i "s/WINTERMINAL=.*/WINTERMINAL=$2/g" /etc/Smart\ Stop/settings.conf
         echo "The terminal will not be closed when Smart Stop is used."
     # If lacks option reminds the user of the usage
     else
@@ -29,7 +29,7 @@ elif [[ $1 == '-d' ]] || [[ $1 == '-D' ]]; then
     # Checks if user inputted a preference
     if [ ! -z $2 ]; then
         # Modifyes the config file with the user preference
-        sudo sed -i "s/DISTRO=.*/DISTRO=$2/g" /etc/Smart\ Stop/smart-stop.conf
+        sudo sed -i "s/DISTRO=.*/DISTRO=$2/g" /etc/Smart\ Stop/settings.conf
         echo "Distro has been changed to $2"
     # If lacks option reminds the user of the usage
     else
@@ -40,7 +40,7 @@ elif [[ $1 == '-i' ]] || [[ $1 == '-I' ]]; then
     # Checks if user inputted a preference
     if [ ! -z $2 ]; then
         # Modifyes the config file with the user preference
-        sudo sed -i "s/EDITOR=.*/EDITOR=$2/g" /etc/Smart\ Stop/smart-stop.conf
+        sudo sed -i "s/EDITOR=.*/EDITOR=$2/g" /etc/Smart\ Stop/settings.conf
         echo "IDE has been changed to $2 "
     # If lacks option reminds the user of the usage
     else
@@ -76,5 +76,5 @@ else
 
     # Runs Powershell Script to close WSL
     cd /usr/local/Smart\ Stop/
-    powershell.exe -f shutdown.ps1; exit
+    powershell.exe -f link.ps1; exit
 fi

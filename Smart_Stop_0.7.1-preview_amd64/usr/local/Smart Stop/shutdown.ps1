@@ -8,7 +8,7 @@
 
 
 # Gets the settings from the conig file
-Foreach ($i in $(Get-Content ../../../etc/"Smart Stop"/smart-stop.conf))
+Foreach ($i in $(Get-Content ../../../etc/"Smart Stop"/settings.conf))
 {
     Set-Variable -Name $i.split("=")[0] -Value $i.split("=",2)[1]
 }
@@ -18,7 +18,6 @@ Foreach ($i in $(Get-Content ../../../etc/"Smart Stop"/smart-stop.conf))
 $IDE = Get-Process $EDITOR -ErrorAction SilentlyContinue
 $windowsTerminal = Get-Process windowsterminal -ErrorAction SilentlyContinue
 $openConsole = Get-Process openconsole -ErrorAction SilentlyContinue
-$linuxdistro = Get-Process $DISTRO -ErrorAction SilentlyContinue
 
 # OPTIONAL:
 # Checks if Windows Terminal is open and closes it
@@ -45,17 +44,12 @@ Remove-Variable IDE
 Remove-Variable EDITOR
 
 
-# Checks if the Linux Distro App is open and closes it
-if ($linuxdistro)
-{
-    $linuxdistro | Stop-Process -Force
-}
+# Stops the distro
+wsl --terminate $DISTRO
 
-# Removes variables after use
-Remove-Variable linuxdistro
+# Removes variable after use
 Remove-Variable DISTRO
 
 
 # After all the apps using WSL are closed it turns it off and exits
 wsl --shutdown
-exit
