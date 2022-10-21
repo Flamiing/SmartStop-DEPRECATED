@@ -59,4 +59,4 @@ You can check at any time the list of commands by typing `smart-stop -?` or `sma
 
 ## 📃License
 
-Smart Stop is under [MIT](https://github.com/Flamiing/SmartStop/blob/main/LICENSE) © Flamiing
+Smart Stop is under [MIT License](https://github.com/Flamiing/SmartStop/blob/main/LICENSE) © Flamiing
