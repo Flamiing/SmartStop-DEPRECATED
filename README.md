@@ -11,17 +11,13 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
   
  - **Compatible WSL distros:**
-		 ✔️ Ubuntu
-		 
-		 ✔️ Debian
-		 
-		 ✔️ kali-linux
-		 
-		 ✔️ Ubuntu-16.04
-		 
-		 ✔️ Ubuntu-18.04
-		 
-		 ✔️ Ubuntu-20.04
+ 
+ ✔️ Ubuntu
+ ✔️ Debian		 
+ ✔️ kali-linux		 
+ ✔️ Ubuntu-16.04		 
+ ✔️ Ubuntu-18.04
+ ✔️ Ubuntu-20.04
 		 
 		 
  - **Install dpkg if not installed**
