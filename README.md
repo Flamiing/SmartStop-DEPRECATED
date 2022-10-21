@@ -1,11 +1,13 @@
-# Smart Stop v0.7.2-preview
+# <p align="center">🛑Smart Stop v0.7.2-preview🛑</p>
 
-### Smart Stop is a program that lets you stop WSL by just typing 'smart-stop' in the terminal!
+### <p align="center">Smart Stop is a program that lets you stop WSL by just typing 'smart-stop' in the terminal!</p>
+</br>
 
+---
+**What it does?**</br>
+Smart Stop will stop **ALL** the WSL services including the distros running in the background and the IDE that you specified in the settings as it is needed for the WSL service to not autorestart and close the `Vmmem` process.</br>
 
-**What it does?**
-Smart Stop will stop **ALL** the WSL services including the distros running in the background and the IDE that you specified in the settings as it is needed for the WSL service to not be autorestarted by itself and close the `Vmmem` process. 
-
+---
 ## Requirements
 
   
