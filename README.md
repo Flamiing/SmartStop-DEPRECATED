@@ -43,10 +43,14 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
 		smart-stop -i IDEName
 		
-	If you use _**Windows Terminal**_ and don’t want it to be closed you can set the option off by typing `smart-stop -t false` into the terminal.<br/>
-	If you change your mind you can just type `smart-stop -t true` to turn it back on.
+	If you use _**Windows Terminal**_ and don’t want it to be closed you can set the option off by typing:
 
- 
+		smart-stop -t false					
+
+	If you change your mind you can just type:
+
+		smart-stop -t true
+
 
 ## ⚡Usage
 
