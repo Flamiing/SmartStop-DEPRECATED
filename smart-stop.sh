@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # |SMART STOP v0.7.2-preview|
-# Developed by: https://github.com/ZumoOfZumos
+# Developed by: https://github.com/Flamiing
 # This program lets the user close WSL by just typing 'smart-stop' in the Linux Terminal
 # If needed or wanted there are several options that can be modified with parameters so that the programs suits your needs
-# For more info please visit: https://github.com/ZumoOfZumos/SmartStop
+# For more info please visit: https://github.com/Flamiing/SmartStop
 
 
 # OPTIONS:
@@ -56,7 +56,7 @@ elif [[ $1 == "--version" ]]; then
     echo 
     echo "MIT License"
     echo 
-    echo "Copyright (c) 2022 ZumoOfZumos"
+    echo "Copyright (c) 2022 Flamiing"
     echo
 # Uninstalls the program
 elif [[ $1 == "--uninstall" ]]; then

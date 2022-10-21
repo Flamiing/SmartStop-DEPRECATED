@@ -9,6 +9,6 @@
 ##  --uninstall                  # Used to safely uninstall the program                                      ##
 ##                                                                                                           ##
 ##                                            For more info visit:                                           ##
-##                                  https://github.com/ZumoOfZumos/SmartStop                                 ##
+##                                   https://github.com/Flamiing/SmartStop                                   ##
 ##                                                                                                           ##
 ###############################################################################################################
