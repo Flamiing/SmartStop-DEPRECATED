@@ -1,14 +1,13 @@
-# <p align="center">🛑Smart Stop v0.7.2-preview🛑</p>
+# <p align="center">🧠Smart Stop v0.7.2-preview🧠</p>
 
 ### <p align="center">Smart Stop is a program that lets you stop WSL by just typing 'smart-stop' in the terminal!</p>
-</br>
 
 ---
 **What it does?**</br>
 Smart Stop will stop **ALL** the WSL services including the distros running in the background and the IDE that you specified in the settings as it is needed for the WSL service to not autorestart and close the `Vmmem` process.</br>
 
 ---
-## Requirements
+## 🛠️Requirements
 
   
  - **Compatible WSL distros:**<br/>
@@ -25,7 +24,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 		sudo apt-get update
 		sudo apt-get install dpkg
 
-## Installation
+## ⚙️Installation
 	
  1. **Download the package:**
 	 
@@ -49,7 +48,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
  
 
-## Usage
+## 💫Usage
 
 After everything is setup you can use `smart-stop` to close WSL and relax!<br/>
 You can check at any time the list of commands by typing `smart-stop -?` or `smart-stop --help`
