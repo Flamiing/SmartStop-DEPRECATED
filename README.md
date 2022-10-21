@@ -48,7 +48,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
  
 
-## 💫Usage
+## ⚡Usage
 
 After everything is setup you can use `smart-stop` to close WSL and relax!<br/>
 You can check at any time the list of commands by typing `smart-stop -?` or `smart-stop --help`
