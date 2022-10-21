@@ -37,7 +37,8 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 	Set the distro in which you are installing Smart Stop by copying your distro name from the compatible distros section above and changing it for `DistroName`.
 
 		smart-stop -d DistroName
-	Set your IDE with the below command. Change `IDEName` by the process name of the IDE you use without the [filename extension](https://en.wikipedia.org/wiki/Filename_extension#:~:text=A%20filename%20extension%2C%20file%20name,md%20). If you don't know how to find the process name [click here](https://docs.celonis.com/en/how-to-discover-a-process-name-for-a-specific-application.html).
+	Set your IDE with the below command. Change `IDEName` by the process name of the IDE you use without the [filename extension](https://en.wikipedia.org/wiki/Filename_extension#:~:text=A%20filename%20extension%2C%20file%20name,md%20). <br/>
+	*If you don't know how to find the process name [click here](https://docs.celonis.com/en/how-to-discover-a-process-name-for-a-specific-application.html).*
 
 		smart-stop -i IDEName
 		
