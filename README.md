@@ -21,8 +21,8 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
  - **Install dpkg if not installed**
 	
-		sudo apt-get update
-		sudo apt-get install dpkg
+       sudo apt-get update
+       sudo apt-get install dpkg
 
 ## ⚙️Installation
 	
