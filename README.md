@@ -25,7 +25,9 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
        sudo apt-get install dpkg
 
 ## ⚙️Installation
-	
+
+*IMPORTANT: All the installation is made from the WSL Terminal you want the program to be installed and used.* </br>
+</br>
  1. **Download the package:**
 	 
 		wget https://github.com/Flamiing/SmartStop/releases/download/0.7.2-preview/Smart_Stop_0.7.2-preview_amd64.deb
