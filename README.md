@@ -24,7 +24,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
        sudo apt-get update
        sudo apt-get install dpkg
        
- - **Enter this command to disable WSL autorestart:**
+ - **Enter this command to disable WSL autorestart on Windows Poweshell with adming permissions:**
 	
        dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart
   
