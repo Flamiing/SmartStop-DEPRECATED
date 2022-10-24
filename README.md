@@ -67,6 +67,11 @@ If you want to revert the changes you can do it with this other command:
 After everything is setup you can use `smart-stop` to close WSL and relax!<br/>
 You can check at any time the list of available commands by typing `smart-stop -?` or `smart-stop --help`
 
+## ✨Feedback
+
+If you want to report any errors or to give some feedback please contact me at **feedback@flamiing.com**.</br>
+Also feel free to contribute to the project if you have any cool features or ideas that could make it better!
+
 ## 📃License
 
 Smart Stop is under [MIT License](https://github.com/Flamiing/SmartStop/blob/main/LICENSE) © Flamiing
