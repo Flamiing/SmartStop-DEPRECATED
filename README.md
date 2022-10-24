@@ -69,7 +69,7 @@ You can check at any time the list of available commands by typing `smart-stop -
 
 ## ✨Feedback
 
-If you want to report any errors or to give some feedback please contact me at **feedback@flamiing.com**.</br>
+If you want to report any bugs or to give some feedback please contact me at **feedback@flamiing.com**.</br>
 Also feel free to contribute to the project if you have any cool features or ideas that could make it better!
 
 ## 📃License
