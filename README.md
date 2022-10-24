@@ -1,4 +1,4 @@
-# <p align="center">🧠Smart Stop v0.7.2-preview🧠</p>
+# <p align="center">🧠Smart Stop🧠</p>
 
 ### <p align="center">Smart Stop is a program that lets you stop WSL by just typing 'smart-stop' in the terminal!</p>
 
