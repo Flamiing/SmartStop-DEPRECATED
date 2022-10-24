@@ -65,7 +65,7 @@ If you want to revert the changes you can do it with this other command:
 ## ⚡Usage
 
 After everything is setup you can use `smart-stop` to close WSL and relax!<br/>
-You can check at any time the list of commands by typing `smart-stop -?` or `smart-stop --help`
+You can check at any time the list of available commands by typing `smart-stop -?` or `smart-stop --help`
 
 ## 📃License
 
