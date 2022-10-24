@@ -30,7 +30,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 </br>
  1. **Download the package:**
 	 
-		wget https://github.com/Flamiing/SmartStop/releases/download/0.7.2-preview/Smart_Stop_1.0_amd64.deb
+		wget https://github.com/Flamiing/SmartStop/releases/download/v1.0.0/Smart_Stop_1.0_amd64.deb
  2. **Install the package:**
 
 		sudo dpkg -i Smart_Stop_1.0_amd64.deb
