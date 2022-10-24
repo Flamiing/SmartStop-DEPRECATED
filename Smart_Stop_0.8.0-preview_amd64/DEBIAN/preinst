@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Pre-install script for Smart Stop 1.0 and up
+# Pre-install script for Smart Stop
 # Removes old versions of Smart Stop to make a clean install
 
 
