@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# |SMART STOP v0.8.0-preview|
+# |SMART STOP v1.0|
 # Developed by: https://github.com/Flamiing
 # This program lets the user close WSL by just typing 'smart-stop' in the Linux Terminal
 # If needed or wanted there are several options that can be modified with parameters so that the programs suits your needs
@@ -62,7 +62,7 @@ case $1 in
     # Checks version of the program
     '--version')
         echo 
-        echo "Smart Stop V0.8.0-preview"
+        echo "Smart Stop V1.0"
         echo 
         echo "MIT License"
         echo 
