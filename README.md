@@ -19,10 +19,19 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 	  	✔️ Ubuntu-20.04<br/>
 
 
- - **Install dpkg if not installed**
+ - **Install dpkg if not installed:**
 	
        sudo apt-get update
        sudo apt-get install dpkg
+       
+ - **Enter this command to disable WSL autorestart:**
+	
+       dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart
+  
+ - **If you wish to revert the changes enter this command:**
+      
+       dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+  
 
 ## ⚙️Installation
 
@@ -52,15 +61,6 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
 		smart-stop -t true
 
-## 💡TIPS
-
-Sometimes it can happen that WSL auto restarts when opening the file explorer(not sure why), to avoid this i recommend you typing this command into Powershell with admin rights:</br>
-
-	dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart
-	
-If you want to revert the changes you can do it with this other command:
-
-	dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 ## ⚡Usage
 
