@@ -4,7 +4,7 @@
 
 ---
 **What it does?**</br>
-Smart Stop will stop **ALL** the WSL services including the distros running in the background and the IDE that you specified in the settings as it is needed for the WSL service to not autorestart and close the `Vmmem` process.</br>
+Smart Stop will stop **ALL** the WSL services including the distros running in the background and the IDE that you specified in the settings as it is needed for WSL to not autorestart and close the `Vmmem` process.</br>
 
 ---
 ## 🛠️Requirements
