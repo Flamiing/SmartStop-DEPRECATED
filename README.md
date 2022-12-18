@@ -23,7 +23,13 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 	
        sudo apt-get update
        sudo apt-get install dpkg
-  
+
+ - **Enable PowerShell Scripts to run:**<br/>
+ 
+ 	Open PowerShell as an adming and type:
+       
+       Set-ExecutionPolicy RemoteSigned
+
 
 ## ⚙️Installation
 
