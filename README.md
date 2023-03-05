@@ -26,7 +26,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
  - **Enable PowerShell Scripts to run:**<br/>
  
- 	Open PowerShell as an adming and type:
+ 	Open PowerShell as administrator and type:
        
        Set-ExecutionPolicy RemoteSigned
 
