@@ -33,7 +33,7 @@ Smart Stop will stop **ALL** the WSL services including the distros running in t
 
 ## ⚙️Installation
 
-*IMPORTANT: All the installation is made from the WSL Terminal you want the program to be installed and used.* </br>
+*IMPORTANT: All the installation is made from the WSL Terminal you want the program to be installed and used on.* </br>
 </br>
  1. **Download the package:**
 	 
